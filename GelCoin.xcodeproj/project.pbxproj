@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		AB8F933A26DA74820056867E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8F933926DA74820056867E /* AppDelegate.swift */; };
 		AB8F933C26DA74820056867E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8F933B26DA74820056867E /* SceneDelegate.swift */; };
-		AB8F933E26DA74820056867E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8F933D26DA74820056867E /* ViewController.swift */; };
-		AB8F934126DA74820056867E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB8F933F26DA74820056867E /* Main.storyboard */; };
 		AB8F934326DA74830056867E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB8F934226DA74830056867E /* Assets.xcassets */; };
 		AB8F934626DA74830056867E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB8F934426DA74830056867E /* LaunchScreen.storyboard */; };
+		AB8F935526DA74A70056867E /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8F934E26DA74A70056867E /* CoinManager.swift */; };
+		AB8F935626DA74A70056867E /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8F934F26DA74A70056867E /* CoinData.swift */; };
+		AB8F935726DA74A70056867E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB8F935126DA74A70056867E /* Main.storyboard */; };
+		AB8F935826DA74A70056867E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8F935426DA74A70056867E /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AB8F933626DA74820056867E /* GelCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GelCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8F933926DA74820056867E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB8F933B26DA74820056867E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AB8F933D26DA74820056867E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AB8F934026DA74820056867E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB8F934226DA74830056867E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB8F934526DA74830056867E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB8F934726DA74830056867E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB8F934E26DA74A70056867E /* CoinManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
+		AB8F934F26DA74A70056867E /* CoinData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
+		AB8F935226DA74A70056867E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB8F935426DA74A70056867E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,65 @@
 		AB8F933826DA74820056867E /* GelCoin */ = {
 			isa = PBXGroup;
 			children = (
+				AB8F935326DA74A70056867E /* Controller */,
+				AB8F934D26DA74A70056867E /* Model */,
+				AB8F935026DA74A70056867E /* View */,
+				AB8F935926DA74B50056867E /* App */,
+				AB8F935A26DA74BC0056867E /* Resources */,
+				AB8F935B26DA74E80056867E /* Supporting Files */,
+			);
+			path = GelCoin;
+			sourceTree = "<group>";
+		};
+		AB8F934D26DA74A70056867E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB8F934E26DA74A70056867E /* CoinManager.swift */,
+				AB8F934F26DA74A70056867E /* CoinData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB8F935026DA74A70056867E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB8F935126DA74A70056867E /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB8F935326DA74A70056867E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AB8F935426DA74A70056867E /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AB8F935926DA74B50056867E /* App */ = {
+			isa = PBXGroup;
+			children = (
 				AB8F933926DA74820056867E /* AppDelegate.swift */,
 				AB8F933B26DA74820056867E /* SceneDelegate.swift */,
-				AB8F933D26DA74820056867E /* ViewController.swift */,
-				AB8F933F26DA74820056867E /* Main.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AB8F935A26DA74BC0056867E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				AB8F934226DA74830056867E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AB8F935B26DA74E80056867E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				AB8F934426DA74830056867E /* LaunchScreen.storyboard */,
 				AB8F934726DA74830056867E /* Info.plist */,
 			);
-			path = GelCoin;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +178,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB8F935726DA74A70056867E /* Main.storyboard in Resources */,
 				AB8F934626DA74830056867E /* LaunchScreen.storyboard in Resources */,
 				AB8F934326DA74830056867E /* Assets.xcassets in Resources */,
-				AB8F934126DA74820056867E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,29 +191,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB8F933E26DA74820056867E /* ViewController.swift in Sources */,
+				AB8F935826DA74A70056867E /* ViewController.swift in Sources */,
+				AB8F935626DA74A70056867E /* CoinData.swift in Sources */,
 				AB8F933A26DA74820056867E /* AppDelegate.swift in Sources */,
 				AB8F933C26DA74820056867E /* SceneDelegate.swift in Sources */,
+				AB8F935526DA74A70056867E /* CoinManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AB8F933F26DA74820056867E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AB8F934026DA74820056867E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AB8F934426DA74830056867E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				AB8F934526DA74830056867E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AB8F935126DA74A70056867E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB8F935226DA74A70056867E /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -288,7 +344,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7QU8N8ZAQ8;
-				INFOPLIST_FILE = GelCoin/Info.plist;
+				INFOPLIST_FILE = "GelCoin/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +363,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7QU8N8ZAQ8;
-				INFOPLIST_FILE = GelCoin/Info.plist;
+				INFOPLIST_FILE = "GelCoin/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
